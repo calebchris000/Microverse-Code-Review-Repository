@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <h1 id="title">Survey Form</h1>
+	    <h2>Hello World we are software developers!</h2>
+      <p id="description">Please complete this form correctly</p>
+      <form id="survey-form">
+        <fieldset>
+          <label id="name-label">Enter your name<input id="name" type="text" placeholder="me exa" required/></label>
+          <label id="email-label">Enter your email<input id="email" type="email" placeholder="me@exa.co.za" required/></label>
+          <label id="number-label">Enter your number<input id="number" type="number" pattern="[0-9]{10}" placeholder="123" min="9" max="10"/></label>
+        </fieldset>
+        <fieldset>
+          <label><select id="dropdown">
+            <option value="1">freeCodeCamp News</option>
+            <option value="2">online</option>
+            <option value="5">shops</option>
+            </label>
+            <label><input value="6" type="radio" name="opt"/></label>
+            <label><input value="7" type="radio" name="opt"/></label>
+        </fieldset>
+        <fieldset>
+          <label><input type="checkbox" value="8"/></label>
+           <label><input type="checkbox" value="3"/></label>
+            <label><input type="checkbox" value="4"/></label>
+            <label>Additional comments
+          <textarea placeholder="I like coding on the beach..."></textarea>
+			  </label>
+          </fieldset>
+           <input id="submit" type="submit" value="Submit" />
+        </form>
+      </body>
+  </html>
